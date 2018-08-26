@@ -7,7 +7,7 @@ public class Utgift {
 	private Date dato;
 	private Kategori kategori;
 	
-	public Utgift(double b, Date d, Kategori k) {
+	public Utgift( Date d, double b,Kategori k) {
 		b = beløp;
 		d = dato;
 		k = kategori;
