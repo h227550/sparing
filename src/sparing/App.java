@@ -1,10 +1,17 @@
 package sparing;
 
+import java.util.Date;
+
 public class App {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	
+	public App() {
+		
 	}
+	
+	public Pengeforbruk registrerPengeforbruk(Date d, double b, Kategori k) {
+		return new 
+		
+	}
+	
 
 }
