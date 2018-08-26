@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class Pengeforbruk {
-	
+	hilde
 	private Date dato;
 	private double beløp;
 	private Kategori kategori;
