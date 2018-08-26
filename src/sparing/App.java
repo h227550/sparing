@@ -4,12 +4,13 @@ import java.util.Date;
 
 public class App {
 	private Pengeforbruk pengeforbruk;
+	private DAO<Utgift> u;
 	
 	public App() {
 	}
 	
-	public void registrerUtgift(Date dato, double beløp, Kategori kategori) {
-		registrerUtgift(dato, beløp, kategori);
+	public void registrerPengeforbruk(Date dato, double beløp, Kategori kategori) {
+		pengeforbruk.registrerUtgift(dato, beløp, kategori);
 		
 	}
 	
