@@ -7,14 +7,14 @@ public class Pengeforbruk {
 	private String dato;
 	private double beløp;
 	private Kategori kategori;
-	private Utgift u = new Utgift();
+	private Utgift u;
 	private DAO<Utgift> dao = new DAO<Utgift>();
 	
 	public Pengeforbruk() {
 
 	}
 	public void registrerUtgift(String dato, double beløp, Kategori kategori) {
-		 System.out.println("test2");
+         u = new Utgift();
 		 this.dato = dato;
 		 this.beløp = beløp;
 		 this.kategori = kategori;
@@ -23,10 +23,10 @@ public class Pengeforbruk {
 		 u.setKategori(this.kategori);
 		 
 		 dao.lagreNyUtgift(u);
-		 System.out.println("test3");
-		 String test = dao.getUtgifter().get(0).toString();
-		 System.out.println(test);
+
 	}
-	
+	public void finnDagensUtgifter() {
+		dao.finnUtgifter("28.08.2018");
+	}
 
 }
