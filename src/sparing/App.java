@@ -8,8 +8,10 @@ public class App {
 	public App() {
 	}
 	
-	public void registrerPengeforbruk(String dato, int beløp, String kate) {
+	public void registrerPengeforbruk(String dato, double beløp, String kate) {
+		
 		Kategori k = new Kategori(kate);
+		System.out.println("test");
 		pengeforbruk.registrerUtgift(dato, beløp, k);
 		
 	}

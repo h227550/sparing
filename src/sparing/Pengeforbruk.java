@@ -8,16 +8,18 @@ public class Pengeforbruk {
 	private double beløp;
 	private Kategori kategori;
 	private Utgift u = new Utgift();
-	private DAO dao;
-	public Pengeforbruk(String dato, double beløp, Kategori kategori) {
-		this.dato = dato;
-		this.beløp = beløp;
-		this.kategori = kategori;
+	private DAO<Utgift> dao = new DAO<Utgift>();
+	
+	public Pengeforbruk() {
+
 	}
 	public void registrerUtgift(String dato, double beløp, Kategori kategori) {
-		 u.setDato(dato);
-		 u.setBeløp(beløp);
-		 u.setKategori(kategori);
+		 this.dato = dato;
+		 this.beløp = beløp;
+		 this.kategori = kategori;
+		 u.setDato(this.dato);
+		 u.setBeløp(this.beløp);
+		 u.setKategori(this.kategori);
 		 
 		 dao.lagreNyUtgift(u);
 	}
