@@ -14,6 +14,7 @@ public class Pengeforbruk {
 
 	}
 	public void registrerUtgift(String dato, double beløp, Kategori kategori) {
+		 System.out.println("test2");
 		 this.dato = dato;
 		 this.beløp = beløp;
 		 this.kategori = kategori;
@@ -22,6 +23,9 @@ public class Pengeforbruk {
 		 u.setKategori(this.kategori);
 		 
 		 dao.lagreNyUtgift(u);
+		 System.out.println("test3");
+		 String test = dao.getUtgifter().get(0).toString();
+		 System.out.println(test);
 	}
 	
 

@@ -3,7 +3,7 @@ package sparing;
 import java.util.Date;
 
 public class App {
-	private Pengeforbruk pengeforbruk;
+	private static Pengeforbruk pengeforbruk;
 	
 	public App() {
 	}
@@ -18,6 +18,7 @@ public class App {
 	
 	public static void main(String[] args) {
 		App a = new App();
+		pengeforbruk = new Pengeforbruk();
 		//Date dato = new Date();
 		
 		a.registrerPengeforbruk("28.08.2018", 100, "mat");
