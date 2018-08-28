@@ -4,10 +4,14 @@ import java.util.Date;
 
 public class Utgift {
 	private double beløp;
-	private Date dato;
+	private String dato;
 	private Kategori kategori;
 	
-	public Utgift( Date d, double b,Kategori k) {
+	public Utgift() {
+		
+	}
+	
+	public Utgift(String d, double b,Kategori k) {
 		b = beløp;
 		d = dato;
 		k = kategori;
@@ -21,11 +25,11 @@ public class Utgift {
 		this.beløp = beløp;
 	}
 
-	public Date getDato() {
+	public String getDato() {
 		return dato;
 	}
 
-	public void setDato(Date dato) {
+	public void setDato(String dato) {
 		this.dato = dato;
 	}
 
